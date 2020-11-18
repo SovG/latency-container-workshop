@@ -24,8 +24,8 @@ steps:
         "deploy",
         "$PROJECT_ID", # We are naming the cloudrun service the same as our project id
         "--image",
-        "--no-traffic",
         "gcr.io/$PROJECT_ID/my_app:latest",
+        "--no-traffic",
         "--region",
         "australia-southeast1",
         "--platform",
